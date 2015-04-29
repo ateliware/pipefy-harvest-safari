@@ -35,7 +35,7 @@
 	<key>Description</key>
 	<string>Harvest time tracking on Pipefy</string>
 	<key>DeveloperIdentifier</key>
-	<string></string>
+	<string>4CF95F697V</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -43,5 +43,7 @@
 		<key>Website Access</key>
 		<dict/>
 	</dict>
+	<key>Website</key>
+	<string>https://github.com/kelvinst/pipefy-harvest-safari</string>
 </dict>
 </plist>
