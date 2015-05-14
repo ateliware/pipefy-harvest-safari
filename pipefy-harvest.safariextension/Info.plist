@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Kelvin Stinghen</string>
 	<key>Builder Version</key>
-	<string>10600.5.17</string>
+	<string>10600.6.3</string>
 	<key>CFBundleDisplayName</key>
 	<string>pipefy-harvest</string>
 	<key>CFBundleIdentifier</key>
@@ -30,6 +30,7 @@
 		<key>Whitelist</key>
 		<array>
 			<string>http://app.pipefy.com/*</string>
+			<string>https://app.pipefy.com/*</string>
 		</array>
 	</dict>
 	<key>Description</key>
@@ -41,7 +42,17 @@
 	<key>Permissions</key>
 	<dict>
 		<key>Website Access</key>
-		<dict/>
+    <dict>
+      <key>Allowed Domains</key>
+      <array>
+        <string>*.pipefy.com</string>
+        <string>*.harvestapp.com</string>
+      </array>
+      <key>Include Secure Pages</key>
+      <true/>
+      <key>Level</key>
+      <string>Some</string>
+    </dict>
 	</dict>
 	<key>Website</key>
 	<string>https://github.com/kelvinst/pipefy-harvest-safari</string>
