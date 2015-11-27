@@ -3,7 +3,7 @@
 
   (function() {
     var PipefyProfile;
-    var debug = false;
+    var debug = true;
     PipefyProfile = (function() {
       function PipefyProfile(config) {
         var _this;
@@ -71,16 +71,15 @@
             _this.renderTries++;
             !debug || console.info("trying to add button");
 
-            var hasTimer = !!document.querySelector(".harvest-timer");
+            var timerEl = document.querySelector(".harvest-timer");
+            var hasTimer = !!timerEl;
             var hasActions = !!document.querySelector(_this.actionSelector);
 
             if (hasTimer) {
               !debug || console.info("already in!!! romving it!");
-              if (this.actionElement != null) {
-                this.actionElement.removeChild(this.timerListItem);
-                this.actionElement = null;
-                this.timerListItem = null;
-              }
+              timerEl.parentNode.removeChild(timerEl)
+              this.actionElement = null;
+              this.timerListItem = null;
             }
 
             if (!hasActions) {
